@@ -1,6 +1,6 @@
 import express from "express";
 import "dotenv/config";
-// import todosList from './routes/todosRoute.js'
+import todosList from './routes/todosRoute.js'
 import connectDB from "./config/db.js";
 
 
@@ -17,7 +17,7 @@ app.use(express.json());
 
 
 //routes
-// app.use('/api/todos', todosList);
+app.use('/api/todos', todosList);
 
 
 
